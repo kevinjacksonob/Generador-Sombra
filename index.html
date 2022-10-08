@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="under-container">
+        <div id="element"></div>
+      </div>
+      <div class="rangers">
+        <div class="ranger">
+          <p class="h-shadow">Sombra Horizontal</p>
+          <input type="range" id="h-shadow" max="100" min="-100" value="0" />
+        </div>
+        <div class="ranger">
+          <p class="v-shadow">Sombra Vertical</p>
+          <input type="range" id="v-shadow" max="100" min="-100" value="0" />
+        </div>
+        <div class="ranger">
+          <p class="blur">Difuminado</p>
+          <input type="range" id="blur" max="100" min="0" value="0" />
+        </div>
+        <div class="ranger">
+          <p class="spread">Tamaño</p>
+          <input type="range" id="spread" max="50" min="-50" value="0" />
+        </div>
+        <div class="ranger">
+          <p class="shadow-color">Color Sombra</p>
+          <input type="color" id="shadow-color" />
+        </div>
+        <div class="ranger">
+          <p class="shadow-color-opacity">Opacidad Color</p>
+          <input
+            type="range"
+            id="shadow-color-opacity"
+            max="1"
+            min="0"
+            step="0.1"
+            value="1"
+          />
+        </div>
+        <div class="ranger">
+          <p class="shadow-inset">Insertar Sombra</p>
+          <input type="checkbox" id="shadow-inset" >
+        </div>
+      </div>
+      <div class="code-shadow">
+        <textarea rows="2" id="code"></textarea>
+        <button onclick="copy()">Copiar</button>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
